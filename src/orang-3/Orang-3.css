@@ -1,0 +1,330 @@
+/* =========================================================
+   orang-3.css
+   Dipakai bareng oleh QuickInfoPanel, ExperienceCard, MapSection
+   Palet: krem hangat + hijau tua ala Jawa Barat
+   ========================================================= */
+
+:root {
+  --cream-bg: #f6efd8;
+  --olive-card: #d9cf9e;
+  --olive-card-hover: #cfc48c;
+  --sage-bg: #eef0e2;
+  --green-dark: #2f5233;
+  --green-darker: #24401f;
+  --text-muted: #6b6b5f;
+  --white: #ffffff;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", "Segoe UI", sans-serif;
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+}
+
+/* ---------------------------------------------------------
+   QuickInfoPanel — "Pilih Destinasi"
+--------------------------------------------------------- */
+.qip-section {
+  background: var(--cream-bg);
+  padding: 80px 24px;
+}
+
+.qip-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.qip-title {
+  font-family: var(--font-serif);
+  color: var(--green-dark);
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.qip-subtitle {
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 48px;
+}
+
+.qip-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+}
+
+.qip-card {
+  background: var(--olive-card);
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  font-family: var(--font-sans);
+}
+
+.qip-card:hover {
+  background: var(--olive-card-hover);
+  transform: translateY(-6px);
+}
+
+.qip-card:focus-visible {
+  outline: 2px solid var(--green-dark);
+  outline-offset: 3px;
+}
+
+.qip-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--green-dark);
+}
+
+.qip-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--green-darker);
+}
+
+@media (max-width: 800px) {
+  .qip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .qip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------------------------------------------------------
+   ExperienceCard — "Melampaui Destinasi, Menemukan Pengalaman"
+--------------------------------------------------------- */
+.exp-section {
+  background: var(--sage-bg);
+  padding: 72px 24px;
+}
+
+.exp-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.exp-eyebrow {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--green-dark);
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.exp-heading {
+  font-family: var(--font-serif);
+  color: var(--green-dark);
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.exp-desc {
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 32px;
+  max-width: 460px;
+}
+
+.exp-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.exp-feature-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 18px 14px;
+}
+
+.exp-feature-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+}
+
+.exp-feature-title {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--green-darker);
+  margin: 0 0 6px;
+}
+
+.exp-feature-desc {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.exp-media {
+  position: relative;
+}
+
+.exp-image-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+}
+
+.exp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.exp-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--green-dark);
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.exp-badge-number {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.exp-badge-label {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+@media (max-width: 860px) {
+  .exp-inner {
+    grid-template-columns: 1fr;
+  }
+  .exp-features {
+    grid-template-columns: 1fr;
+  }
+  .exp-badge {
+    right: 12px;
+  }
+}
+
+/* ---------------------------------------------------------
+   MapSection — "Akses Menuju Lokasi"
+--------------------------------------------------------- */
+.map-section {
+  background: var(--white);
+  padding: 48px 24px 72px;
+}
+
+.map-frame {
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  min-height: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--cream-bg);
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  display: block;
+}
+
+.map-placeholder {
+  width: 100%;
+  min-height: 420px;
+  background: var(--cream-bg);
+}
+
+.map-card {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  max-width: 260px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+}
+
+.map-card-title {
+  font-family: var(--font-serif);
+  color: var(--green-dark);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.map-card-desc {
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.map-card-link {
+  font-family: var(--font-sans);
+  color: var(--green-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.map-card-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .map-card {
+    left: 16px;
+    right: 16px;
+    max-width: none;
+  }
+}
