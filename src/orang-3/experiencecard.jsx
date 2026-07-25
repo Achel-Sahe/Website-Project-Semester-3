@@ -1,6 +1,6 @@
 import { BadgeCheck, MapPin, Compass } from "lucide-react"
-import "./Orang-3.css"
-import foto1 from "./img/foto1.png"
+import "./orang-3.css"
+import foto1 from "./img/foto..png"
 
 function ExperienceCard() {
   return (
@@ -37,7 +37,7 @@ function ExperienceCard() {
         </div>
         <div className="exp-media">
           <div className="exp-image-wrap">
-            <img src={foto1.png} alt="Priangan" className="exp-image" />
+            <img src={foto1} alt="Priangan" className="exp-image" />
           </div>
           <div className="exp-badge">
             <span className="exp-badge-number">150+</span>

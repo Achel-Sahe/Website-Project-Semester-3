@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2f5233"/>
+      <stop offset="100%" style="stop-color:#1a3a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#g)"/>
+  <path d="M400 280 L300 160 L350 160 L400 220 L450 160 L500 160 Z" fill="rgba(255,255,255,0.15)"/>
+  <path d="M200 320 L150 240 L180 240 L200 270 L230 240 L260 240 Z" fill="rgba(255,255,255,0.1)"/>
+  <path d="M600 300 L550 200 L580 200 L600 240 L630 200 L660 200 Z" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="400" cy="120" r="30" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="400" cy="120" r="15" fill="rgba(255,255,255,0.05)"/>
+  <text x="400" y="350" text-anchor="middle" font-family="sans-serif" font-size="20" fill="rgba(255,255,255,0.5)">Ganti Gambar Gunung Ciremai</text>
+</svg>

@@ -1,16 +1,18 @@
+import { useNavigate } from "react-router-dom"
 import "./orang-3.css"
 import { Mountain, Droplets, TreePine, PawPrint, Palmtree } from "lucide-react"
 
-
 const destinations = [
-    { id: "Gunung", label: "Gunung", icon: Mountain },
-    { id: "Curug", label: "Curug", icon: Droplets },
-    { id: "Taman", label: "Taman", icon: TreePine },
-    { id: "Kebun Binatang", label: "Kebun Binatang", icon: PawPrint },
-    { id: "Pantai", label: "Pantai", icon: Palmtree },
+  { id: "gunung", label: "Gunung", icon: Mountain },
+  { id: "curug", label: "Curug", icon: Droplets },
+  { id: "taman", label: "Taman", icon: TreePine },
+  { id: "kebun-binatang", label: "Kebun Binatang", icon: PawPrint },
+  { id: "pantai", label: "Pantai", icon: Palmtree },
 ]
 
 function QuickInfoPanel() {
+  const navigate = useNavigate()
+
   return (
     <section className="qip-section">
       <div className="qip-inner">
@@ -23,7 +25,11 @@ function QuickInfoPanel() {
           {destinations.map((item) => {
             const Icon = item.icon
             return (
-              <button key={item.id} className="qip-card">
+              <button
+                key={item.id}
+                className="qip-card"
+                onClick={() => navigate(`/destination/${item.id}`)}
+              >
                 <Icon className="qip-icon" />
                 <span className="qip-label">{item.label}</span>
               </button>
