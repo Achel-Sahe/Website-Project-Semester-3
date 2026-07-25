@@ -1,5 +1,5 @@
 import { BadgeCheck, MapPin, Compass } from "lucide-react"
-import "./orang-3.css"
+import "./orang3.css"
 import foto1 from "./img/foto..png"
 
 function ExperienceCard() {

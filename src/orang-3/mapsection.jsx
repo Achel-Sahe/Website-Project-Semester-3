@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react"
-import "./orang-3.css"
+import "./orang3.css"
 
 export default function MapSection({
   title = "Akses Menuju Lokasi",

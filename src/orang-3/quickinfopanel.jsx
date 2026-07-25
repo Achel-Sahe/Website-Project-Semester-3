@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import "./orang-3.css"
+import "./orang3.css"
 import { Mountain, Droplets, TreePine, PawPrint, Palmtree } from "lucide-react"
 
 const destinations = [

@@ -1,7 +1,7 @@
 import { ImageIcon } from "lucide-react"
-import MapSection from "./MapSection"
+import MapSection from "./mapsection"
 import { GUNUNG_CIREMAI, PANTAI, CURUG, TAMAN, KEBUN_BINATANG } from "./data"
-import "./orang-3.css"
+import "./orang3.css"
 
 function DestHero({ title, tagline, image }) {
   const hasImage = Boolean(image)

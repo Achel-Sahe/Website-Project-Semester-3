@@ -1,7 +1,7 @@
 import Hero from "../orang-1/hero"
-import QuickInfoPanel from "./QuickInfoPanel"
-import ExperienceCard from "./ExperienceCard"
-import MapSection from "./MapSection"
+import QuickInfoPanel from "./quickinfopanel"
+import ExperienceCard from "./experiencecard"
+import MapSection from "./mapsection"
 import { GUNUNG_CIREMAI } from "./data"
 
 export default function Home() {
