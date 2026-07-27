@@ -1,12 +1,11 @@
 import { BadgeCheck, MapPin, Compass } from "lucide-react"
-import "./orang3.css"
-import foto1 from "./img/foto..png"
+import foto1 from "../img/foto..png"
 
 function ExperienceCard() {
   return (
-    <section className="exp-section">
+    <section className="exp-section" data-aos="fade-up">
       <div className="exp-inner">
-        <div className="exp-text">
+        <div className="exp-text" data-aos="fade-right">
           <span className="exp-eyebrow">✦ Sentuhan keaslian priangan</span>
           <h2 className="exp-heading">
             Melampaui Destinasi,<br />Menemukan Pengalaman.
@@ -18,24 +17,24 @@ function ExperienceCard() {
             menjamin perjalanan yang tak terlupakan.
           </p>
           <div className="exp-features">
-            <div className="exp-feature-card">
+            <div className="exp-feature-card" data-aos="fade-up" data-aos-delay="100">
               <BadgeCheck className="exp-feature-icon" />
               <h4 className="exp-feature-title">Kurasi</h4>
               <p className="exp-feature-desc">Destinasi terpilih</p>
             </div>
-            <div className="exp-feature-card">
+            <div className="exp-feature-card" data-aos="fade-up" data-aos-delay="200">
               <MapPin className="exp-feature-icon" />
               <h4 className="exp-feature-title">Lokasi</h4>
               <p className="exp-feature-desc">Mudah diakses</p>
             </div>
-            <div className="exp-feature-card">
+            <div className="exp-feature-card" data-aos="fade-up" data-aos-delay="300">
               <Compass className="exp-feature-icon" />
               <h4 className="exp-feature-title">Petualangan</h4>
               <p className="exp-feature-desc">Pengalaman baru</p>
             </div>
           </div>
         </div>
-        <div className="exp-media">
+        <div className="exp-media" data-aos="fade-left">
           <div className="exp-image-wrap">
             <img src={foto1} alt="Priangan" className="exp-image" />
           </div>

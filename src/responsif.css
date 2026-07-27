@@ -1,0 +1,256 @@
+/* ============================================================
+   responsif.css — consolidated responsive styles
+   All breakpoints are standardised for consistency.
+   ============================================================ */
+
+/* ─── up to 480px (small phone) ──────────────────────────── */
+@media (max-width: 480px) {
+  .qip-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .exp-feature-card {
+    text-align: center;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+
+    .destination-card__tag, .destination-card__heart {
+      display: none;
+    }
+  }
+
+  .gallery-bento {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 12px;
+    padding: 12px;
+  }
+  .gallery-bento__item,
+  .gallery-bento__item--hero,
+  .gallery-bento__item--wide,
+  .gallery-bento__item--normal,
+  .gallery-bento__item--full {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .gallery-bento__item--hero {
+    aspect-ratio: 3 / 4;
+  }
+  .gallery-bento__caption {
+    font-size: 1.15rem;
+  }
+  .gallery-bento__title {
+    font-size: 0.8rem;
+  }
+}
+
+/* ─── up to 560px (mobile footer) ───────────────────────── */
+@media (max-width: 560px) {
+  .footer {
+    padding: 56px var(--grid-margin-mobile) 32px;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+}
+
+/* ─── up to 600px (mobile hero, map-card, destination) ──── */
+@media (max-width: 600px) {
+  .map-card {
+    left: 16px;
+    right: 16px;
+    max-width: none;
+  }
+
+  .map-card-desc {
+    display: none;
+  }
+
+  .dest-hero {
+    height: 300px;
+  }
+  .dest-hero-overlay {
+    padding: 24px;
+  }
+  .dest-hero-title {
+    font-size: 2rem;
+  }
+
+  .gallery-bento {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 12px;
+    padding: 12px;
+  }
+  .gallery-bento__item,
+  .gallery-bento__item--hero,
+  .gallery-bento__item--wide,
+  .gallery-bento__item--normal,
+  .gallery-bento__item--full {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .gallery-bento__item--hero {
+    aspect-ratio: 3 / 4;
+  }
+  .gallery-bento__caption {
+    font-size: 1.15rem;
+  }
+  .gallery-bento__title {
+    font-size: 0.8rem;
+  }
+}
+
+/* ─── up to 700px (destination info stacks) ─────────────── */
+@media (max-width: 700px) {
+  .dest-info-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* ─── up to 768px (tablet destination grid, filter bar) ─── */
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 0 var(--grid-margin-mobile, 20px);
+  }
+  .galeri-page .filter-bar,
+  .destinasi-section .filter-bar {
+    margin: 0 auto;
+    padding: 8px 0;
+    justify-content: center;
+    gap: 10px;
+    max-width: 90%;
+  }
+
+  .galeri-page .filter-chip,
+  .destinasi-section .filter-chip {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}
+
+/* ─── up to 860px (experience section stacks) ───────────── */
+@media (max-width: 860px) {
+  .exp-inner {
+    grid-template-columns: 1fr;
+  }
+  .exp-features {
+    grid-template-columns: 1fr;
+  }
+  .exp-badge {
+    right: 12px;
+  }
+}
+
+/* ─── up to 900px (footer 2 cols) ───────────────────────── */
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ─── up to 960px (gallery bento 2 cols) ────────────────── */
+@media (max-width: 960px) {
+  .gallery-bento {
+    grid-template-columns: repeat(2, 1fr);
+    --gallery-row-h: 190px;
+  }
+  .gallery-bento__item--hero {
+    grid-column: 1 / -1;
+    grid-row: span 2;
+  }
+  .gallery-bento__item--wide {
+    grid-column: 1 / -1;
+    grid-row: span 1;
+  }
+  .gallery-bento__item--normal {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .gallery-bento__item--full {
+    grid-column: 1 / -1;
+  }
+  .gallery-bento__caption {
+    font-size: 1.35rem;
+  }
+}
+
+/* ─── up to 480px (overrides after 960px gallery rules) ─── */
+@media (max-width: 480px) {
+  .gallery-bento {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 12px;
+    padding: 12px;
+  }
+  .gallery-bento__item,
+  .gallery-bento__item--hero,
+  .gallery-bento__item--wide,
+  .gallery-bento__item--normal,
+  .gallery-bento__item--full {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .gallery-bento__item--hero {
+    aspect-ratio: 3 / 4;
+  }
+  .gallery-bento__caption {
+    font-size: 1.15rem;
+  }
+  .gallery-bento__title {
+    font-size: 0.8rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MIN-WIDTH (desktop-first) breakpoints
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── 640px and up (CTA visible) ────────────────────────── */
+@media (min-width: 640px) {
+  .navbar-cta {
+    display: flex;
+  }
+}
+
+/* ─── 768px and up (feature grid 3 cols) ────────────────── */
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ─── 1024px and up (desktop navbar) ────────────────────── */
+@media (min-width: 1024px) {
+  .navbar-nav {
+    display: flex;
+  }
+  .navbar-bar {
+    padding-inline: 3rem;
+  }
+  .navbar-hamburger {
+    display: none;
+  }
+  .navbar-mobile {
+    display: none;
+  }
+}

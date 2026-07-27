@@ -1,7 +1,19 @@
 import "./orang1.css";
+import { Link } from "react-router-dom";
 
-const wisataLinks = ["Gunung", "Curug", "Taman", "Kebun Binatang", "Pantai"];
-const perusahaanLinks = ["Tentang Kami", "Galeri", "Kontak"];
+const wisataLinks = [
+  { label: "Gunung", to: "/destination?filter=gunung" },
+  { label: "Curug", to: "/destination?filter=curug" },
+  { label: "Taman", to: "/destination?filter=taman" },
+  { label: "Kebun Binatang", to: "/destination?filter=kebun%20binatang" },
+  { label: "Pantai", to: "/destination?filter=pantai" },
+];
+
+const perusahaanLinks = [
+  { label: "Tentang Kami", to: "/about" },
+  { label: "Galeri", to: "/galeri" },
+  { label: "Kontak", to: "#" },
+];
 
 const socialIcons = [
   {
@@ -59,10 +71,10 @@ export default function Footer() {
             <p className="footer__heading">Wisata</p>
             <ul className="footer__list">
               {wisataLinks.map((item) => (
-                <li key={item}>
-                  <a className="footer__link" href="#">
-                    {item}
-                  </a>
+                <li key={item.label}>
+                  <Link className="footer__link" to={item.to}>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -72,10 +84,10 @@ export default function Footer() {
             <p className="footer__heading">Perusahaan</p>
             <ul className="footer__list">
               {perusahaanLinks.map((item) => (
-                <li key={item}>
-                  <a className="footer__link" href="#">
-                    {item}
-                  </a>
+                <li key={item.label}>
+                  <Link className="footer__link" to={item.to}>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>

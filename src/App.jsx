@@ -1,29 +1,40 @@
-import { Routes, Route } from "react-router-dom"
-import { SiteNavbar } from "./orang-1/navbar"
-import Footer from "./orang-1/footer"
-import Home from "./orang-3/home"
-import {
-  GunungPage,
-  PantaiPage,
-  CurugPage,
-  TamanPage,
-  KebunBinatangPage,
-} from "./orang-3/destinations"
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import Home from './page/home.jsx'
+import About from './page/about.jsx'
+import React from 'react'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    const lenis = window.lenis
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: true })
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname])
+  return null
+}
+import './App.css'
+import './orang-1/orang1.css'
+import './responsif.css'
+import Destinasi from './page/destinasi.jsx'
+import { PersonalWisata } from './page/personalWisata.jsx'
+import Galeri from './page/galeri.jsx'
 
 const App = () => {
   return (
-    <>
-      <SiteNavbar />
+    <div className='app'>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/destination/gunung" element={<GunungPage />} />
-        <Route path="/destination/pantai" element={<PantaiPage />} />
-        <Route path="/destination/curug" element={<CurugPage />} />
-        <Route path="/destination/taman" element={<TamanPage />} />
-        <Route path="/destination/kebun-binatang" element={<KebunBinatangPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/galeri" element={<Galeri />} />
+        <Route path="/destination" element={<Destinasi />} />
+        <Route path="/pw/:name" element={<PersonalWisata />} />
       </Routes>
-      <Footer />
-    </>
+    </div>
   )
 }
 
