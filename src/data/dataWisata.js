@@ -234,7 +234,7 @@ export const dataWisata = {
     },
   ],
   filters: [
-    { id: "semua", label: "Semua" },
+    { id: "semua", label: "Semua"},
     { id: "gunung", label: "Gunung" },
     { id: "curug", label: "Curug" },
     { id: "pantai", label: "Pantai" },
@@ -242,7 +242,7 @@ export const dataWisata = {
     { id: "taman", label: "Taman" },
   ],
   qipDestinations: [
-    { id: "gunung", label: "Gunung", icon: "Mountain" },
+    { id: "gunung", label: "Gunung",  icon: "Mountain" },
     { id: "curug", label: "Curug", icon: "Droplets" },
     { id: "taman", label: "Taman", icon: "TreePine" },
     { id: "kebun binatang", label: "Kebun Binatang", icon: "PawPrint" },
