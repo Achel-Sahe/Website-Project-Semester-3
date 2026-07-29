@@ -1,7 +1,7 @@
 import React from "react";
 import { SiteNavbar } from "../orang-1/navbar";
 import Hero from "../orang-1/hero";
-import QuickInfoPanel from "../orang-3/QuickInfoPanel";
+import QuickInfoPanel from "../orang-3/quickinfopanel";
 import Title from "../components/title";
 import SubTitle from "../components/subTitle";
 import HeaderSection from "../components/headerSection";
