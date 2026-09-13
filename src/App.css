@@ -1660,6 +1660,10 @@ object-fit: cover;
   padding: 0;
   display: flex;
   transition: color 0.15s ease;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  -ms-transition: color 0.15s ease;
+  -o-transition: color 0.15s ease;
 }
 
 .destination-card__heart:hover {
@@ -1667,21 +1671,21 @@ object-fit: cover;
 }
 
 .destination-card__title {
-  position: absolute;
   bottom: 12px;
   left: 12px;
   color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
+  position: absolute;
   font-family: var(--font-body);
   margin: 1rem;
+  font-weight: 600;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  font-size: 18px;
 }
 
 .show-more-wrapper {
+  padding: 24px 0 48px;
   display: flex;
   justify-content: center;
-  padding: 24px 0 48px;
 }
 
 .show-more-btn {
