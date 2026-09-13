@@ -1689,15 +1689,15 @@ object-fit: cover;
 }
 
 .show-more-btn {
-  padding: 10px 32px;
-  border-radius: 9999px;
   font-size: 14px;
+  padding: 10px 32px;
   font-weight: 500;
-  font-family: var(--font-body);
-  border: 1.5px solid #15803d;
   background: transparent;
+  border-radius: 9999px;
+  font-family: var(--font-body);
   color: #15803d;
   cursor: pointer;
+  border: 1.5px solid #15803d;
   transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
