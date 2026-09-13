@@ -742,55 +742,56 @@ button {
 }
 
 .qip-title {
+  font-size: 3rem;
   font-family: var(--font-display);
   color: var(--green-dark);
-  font-size: 3rem;
-  font-weight: 600;
   margin: 0 0 16px;
+  font-weight: 600;
 }
 
 .qip-title span {
     font-weight: lighter;
-
 }
 
 .qip-subtitle {
-  font-family: 'Playwrite NZ Basic', cursive;
-  color: var(--text-muted);
   font-size: 1.1rem;
+  color: var(--text-muted);
+  font-family: 'Playwrite NZ Basic', cursive;
   line-height: 1.7;
-  max-width: 620px;
   margin-bottom: 1rem;
+  max-width: 620px;
 }
 
 .qip-inner .qip-subtitle {
-  text-align: center;
   margin: 0 auto 48px;
+  text-align: center;
 }
 
 
 .qip-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   gap: 28px;
+  grid-template-columns: repeat(5, 1fr);
+  display: grid;
 }
 
 .qip-card {
-  background: var(--color-secondary-container);
   border: none;
+  background: var(--color-secondary-container);
+  display: flex;
   border-radius: var(--radius-lg);
   padding: 40px 16px;
-  display: flex;
   flex-direction: column;
+  cursor: pointer;
   align-items: center;
   gap: 16px;
-  cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease;
+  transition:  transform 0.2s ease,    background 0.2s ease;
   font-family: var(--font-body);
   text-decoration: none;
   color: inherit;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 
 .qip-card:hover {
