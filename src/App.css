@@ -563,44 +563,44 @@ button {
 }
 
 .footer__grid {
-  display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: var(--grid-gutter);
+  display: grid;
 }
 
 .footer__logo {
+  color: var(--color-primary);
   margin: 0 0 20px;
   font: var(--text-headline-sm);
-  color: var(--color-primary);
 }
 
 .footer__desc {
-  margin: 0;
   max-width: 32ch;
-  font: var(--text-body-md);
+  margin: 0;
   color: var(--color-secondary);
+  font: var(--text-body-md);
 }
 
 .footer__heading {
-  margin: 0 0 20px;
-  font: 600 24px/32px var(--font-display);
   color: var(--color-primary);
+  font: 600 24px/32px var(--font-display);
+  margin: 0 0 20px;
 }
 
 .footer__list {
-  list-style: none;
   margin: 0;
-  padding: 0;
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  padding: 0;
   gap: 16px;
+  flex-direction: column;
 }
 
 .footer__link {
-  font: var(--text-body-md);
-  color: var(--color-secondary);
   text-decoration: none;
+  font: var(--text-body-md);
   transition: color 0.15s ease;
+  color: var(--color-secondary);
 }
 
 .footer__link:hover,
@@ -620,16 +620,14 @@ button {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-full);
-  background-color: color-mix(
-    in srgb,
-    var(--color-primary-container) 28%,
-    white
-  );
+  background-color: color-mix(    in srgb,    var(--color-primary-container) 28%,    white  );
   color: var(--color-primary);
   text-decoration: none;
-  transition:
-    background-color 0.15s ease,
-    transform 0.15s ease;
+  transition:    background-color 0.15s ease,    transform 0.15s ease;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 
 .footer__social-btn svg {
@@ -639,12 +637,12 @@ button {
 
 .footer__social-btn:hover,
 .footer__social-btn:focus-visible {
-  background-color: color-mix(
-    in srgb,
-    var(--color-primary-container) 45%,
-    white
-  );
+  background-color: color-mix(    in srgb,    var(--color-primary-container) 45%,    white  );
   transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 .footer__divider {
