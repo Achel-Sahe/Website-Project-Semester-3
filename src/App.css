@@ -687,10 +687,10 @@ button {
 
 
 
-/* orang 3 css */
+/* dev 3 css */
 
 /* =========================================================
-   orang-3.css
+   dev-3.css
    Dipakai bareng oleh QuickInfoPanel, ExperienceCard, MapSection
    Palet: krem hangat + hijau tua ala Jawa Barat
    ========================================================= */
@@ -1517,7 +1517,7 @@ button {
 }
 
 /* =========================================================
-   orang-2.css
+   dev-2.css
    ========================================================= */
 .destinasi-section {
   padding: 0 0 5rem;
@@ -1599,20 +1599,20 @@ button {
 }
 
 .destination-card {
-  position: relative;
   border-radius: 16px;
-  overflow: hidden;
-  aspect-ratio: 4 / 5;
+  position: relative;
   cursor: pointer;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
 }
 
 .destination-card__image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+position: absolute;
+height: 100%;
+width: 100%;
+inset: 0;
+transition: transform 0.3s ease;
+object-fit: cover;
 }
 
 .destination-card:hover .destination-card__image {

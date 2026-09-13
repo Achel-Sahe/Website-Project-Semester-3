@@ -1,4 +1,4 @@
-import "./orang1.css";
+import "./dev1.css";
 import { Link } from "react-router-dom";
 
 const wisataLinks = [

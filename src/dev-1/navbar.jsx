@@ -16,6 +16,9 @@ export function SiteNavbar({ className }) {
   const wisataTitle = "Jelajahi Jabar"
 
   const isActive = (href) => location.pathname === href
+  // Halaman detail wisata punya hero image gelap di belakang navbar,
+  // jadi nav-link mesti pakai warna terang (c-scnd) biar kebaca.
+  const isDetailPage = location.pathname.startsWith("/pw/")
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -50,7 +53,7 @@ export function SiteNavbar({ className }) {
             <div key={item.label} className="navbar-nav-item">
               <Link
                 to={item.href}
-                className={`navbar-nav-link ${className} ${isActive(item.href) ? "navbar-nav-link--active" : ""}`}
+                className={`navbar-nav-link ${isDetailPage ? "c-scnd" : ""} ${className} ${isActive(item.href) ? "navbar-nav-link--active" : ""}`}
               >
                 {item.label}
                 <span className="navbar-nav-underline" />

@@ -28,8 +28,6 @@ import KebunBandung from "../img/kebun-binatang/KebunBandung.jpg";
 import KebunRagunan from "../img/kebun-binatang/KebunRagunan.jpg";
 import KebunCikembulan from "../img/kebun-binatang/KebunCikembulan.jpg";
 
-import img from "../img/foto..png";
-
 export const dataWisata = {
   destinations: [
     {
@@ -56,7 +54,7 @@ export const dataWisata = {
       image: TamanKebunraya,
       size: "normal",
     },
-    {
+     {
       id: 4,
       name: "Pantai Pangandaran",
       tag: "Pantai",
@@ -253,7 +251,6 @@ export const dataWisata = {
     { icon: "BadgeCheck", judul: "Lokasi", desc: "Mudah diakses" },
     { icon: "Compass", judul: "Petualangan", desc: "Pengalaman Terbaru" },
   ],
-
   detail: {
     gunung: [
       {

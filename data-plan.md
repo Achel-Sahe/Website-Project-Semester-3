@@ -9,11 +9,11 @@ Memusatkan semua data wisata ke dalam satu file `src/data/dataWisata.js` yang bi
 
 | Data | Deskripsi | Sumber Saat Ini |
 |---|---|---|
-| `DESTINATIONS` | 25 destinasi (nama, kategori, gambar, ukuran) | `src/orang-2/data/destinations.js` |
-| `DESTINATION_FILTERS` | 6 filter (Semua, Gunung, Curug, Pantai, Kebun Binatang, Taman) | `src/orang-2/data/destinations.js` |
-| `QIP_DESTINATIONS` | 5 kategori untuk Quick Info Panel cards | `src/orang-3/quickinfopanel.jsx` (hardcoded) |
+| `DESTINATIONS` | 25 destinasi (nama, kategori, gambar, ukuran) | `src/dev-2/data/destinations.js` |
+| `DESTINATION_FILTERS` | 6 filter (Semua, Gunung, Curug, Pantai, Kebun Binatang, Taman) | `src/dev-2/data/destinations.js` |
+| `QIP_DESTINATIONS` | 5 kategori untuk Quick Info Panel cards | `src/dev-3/quickinfopanel.jsx` (hardcoded) |
 | `FEATURE_CARDS` | 3 card fitur (Kurasi, Lokasi, Petualangan) | `src/data/cardGrid.jsx` |
-| `GUNUNG_CIREMAI`, `PANTAI`, `CURUG`, `TAMAN`, `KEBUN_BINATANG` | 5 destinasi detail | `src/orang-3/data.js` (existing) |
+| `GUNUNG_CIREMAI`, `PANTAI`, `CURUG`, `TAMAN`, `KEBUN_BINATANG` | 5 destinasi detail | `src/dev-3/data.js` (existing) |
 
 ---
 
@@ -63,13 +63,13 @@ Memusatkan semua data wisata ke dalam satu file `src/data/dataWisata.js` yang bi
 
 | File | Import Lama | Import Baru |
 |---|---|---|
-| `src/page/destinasi.jsx` | `../orang-2/data/destinations` | `../data/data` |
-| `src/page/galeri.jsx` | `../orang-2/data/destinations` | `../data/data` |
-| `src/orang-3/quickinfopanel.jsx` | local data (hapus) | `../data/data` |
-| `src/orang-3/experiencecard.jsx` | `../data/cardGrid` | `../data/data` |
-| `src/components/aboutKontol.jsx` | `../data/cardGrid` | `../data/data` |
-| `src/orang-3/destinations.jsx` | `./data` | `../data/data` |
-| `src/page/personalWisata.jsx` | `../orang-3/data` | `../data/data` |
+| `src/page/destinasi.jsx` | `../dev-2/data/destinations` | `../data/data` |
+| `src/page/galeri.jsx` | `../dev-2/data/destinations` | `../data/data` |
+| `src/dev-3/quickinfopanel.jsx` | local data (hapus) | `../data/data` |
+| `src/dev-3/experiencecard.jsx` | `../data/cardGrid` | `../data/data` |
+| `src/components/aboutSection.jsx` | `../data/cardGrid` | `../data/data` |
+| `src/dev-3/destinations.jsx` | `./data` | `../data/data` |
+| `src/page/personalWisata.jsx` | `../dev-3/data` | `../data/data` |
 
 ---
 
@@ -77,5 +77,5 @@ Memusatkan semua data wisata ke dalam satu file `src/data/dataWisata.js` yang bi
 
 - Ikon di `QIP_DESTINATIONS` dan `FEATURE_CARDS` disimpan sebagai **string nama ikon** (bukan JSX) biar data tetap bersih tanpa dependency React
 - Komponen yang render ikon akan melakukan mapping string → komponen lucide-react
-- Path gambar `DESTINATIONS` akan diarahkan ke `src/orang-2/images/...`
-- File lama (`src/orang-2/data/destinations.js`, `src/data/cardGrid.jsx`) bisa dihapus setelah semua import diupdate
+- Path gambar `DESTINATIONS` akan diarahkan ke `src/dev-2/images/...`
+- File lama (`src/dev-2/data/destinations.js`, `src/data/cardGrid.jsx`) bisa dihapus setelah semua import diupdate

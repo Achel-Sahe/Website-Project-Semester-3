@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import FilterBar from "../orang-2/FilterBar";
-import DestinationCard from "../orang-2/DestinationCard";
+import FilterBar from "../dev-2/FilterBar";
+import DestinationCard from "../dev-2/DestinationCard";
 import { dataWisata } from "../data/dataWisata";
 import Title from "../components/title";
-import { SiteNavbar } from "../orang-1/navbar";
-import Footer from "../orang-1/footer";
 import SubTitle from "../components/subTitle";
 
 export default function Destinasi() {
@@ -34,7 +32,6 @@ export default function Destinasi() {
 
   return (
     <>
-      <SiteNavbar />
     <div className="destinasi-section ">
 
         <div className="head sembilan-puluh" data-aos="fade-down">
@@ -48,7 +45,7 @@ export default function Destinasi() {
         value={activeFilter}
         onChange={handleFilterChange}
         className="filter-bar--center"
-      />
+      /> 
       <div className="destination-grid" data-aos="fade-up">
         {visible.map((d) => (
           <DestinationCard key={d.id} {...d} />
@@ -63,7 +60,6 @@ export default function Destinasi() {
       )}
 
     </div>
-      <Footer/>
     </>
   );
 }

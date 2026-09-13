@@ -1,11 +1,9 @@
-import { BadgeCheck, MapPin, Compass } from "lucide-react";
 import foto1 from "../img/foto..png";
 import { dataWisata } from "../data/dataWisata";
 import Title from "./title";
-import Button from "./link";
-import MapSection from "../orang-3/mapsection";
+import MapSection from "../dev-3/mapsection";
 
-function AboutKontol({ destination }) {
+function AboutSection({ destination }) {
   if (destination) {
     return (
       <section className="exp-section bg" data-aos="fade-up">
@@ -73,4 +71,4 @@ function AboutKontol({ destination }) {
   );
 }
 
-export default AboutKontol;
+export default AboutSection;

@@ -1,8 +1,6 @@
 import React from "react";
 import Title from "./title";
 import SubTitle from "./subTitle";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 import Button from "./link";
 const HeaderSection = ({ title, subtitle, href }) => {
   return (

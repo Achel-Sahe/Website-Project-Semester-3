@@ -1,10 +1,8 @@
 import { useParams } from "react-router-dom";
 import Title from "../components/title";
 import SubTitle from "../components/subTitle";
-import { SiteNavbar } from "../orang-1/navbar";
-import Footer from "../orang-1/footer";
 import { dataWisata } from "../data/dataWisata"; 
-import MapSection from "../orang-3/mapsection";
+import MapSection from "../dev-3/mapsection";
 
 export const PersonalWisata = () => {
   const { name } = useParams();
@@ -14,7 +12,6 @@ export const PersonalWisata = () => {
 
   return (
     <div>
-      <SiteNavbar className={'c-scnd'}/>
       <div className="pw-image">
         <div className="pw-overlay"></div>
         <div className="pw-overlay-top"></div>
@@ -40,7 +37,6 @@ export const PersonalWisata = () => {
       </div>
       <br />
       <MapSection title={destination.title} description={destination.description} mapsUrl={destination.mapsUrl} embedSrc={destination.embedSrc} />
-      <Footer />
     </div>
   );
 };

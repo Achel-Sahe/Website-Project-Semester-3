@@ -1,16 +1,13 @@
 import React from "react";
-import GalleryBento from "../orang-1/galeriBento";
+import GalleryBento from "../dev-1/galeriBento";
 import { useState } from "react";
 import { dataWisata } from "../data/dataWisata";
 import Title from "../components/title";
 import SubTitle from "../components/subTitle";
-import FilterBar from "../orang-2/FilterBar";
-import { SiteNavbar } from "../orang-1/navbar";
-import Footer from "../orang-1/footer";
+import FilterBar from "../dev-2/FilterBar";
 
 const Galeri = () => {
   const [activeFilter, setActiveFilter] = useState("semua");
-  const [showAll, setShowAll] = useState(false);
 
   const filtered =
     activeFilter === "semua"
@@ -28,11 +25,9 @@ const Galeri = () => {
 
   const handleFilterChange = (filter) => {
     setActiveFilter(filter);
-    setShowAll(false);
   };
   return (
     <>
-      <SiteNavbar/>
       <div className="sembilan-puluh galeri-page">
         <div className="head" data-aos="fade-down">
       <Title text={"Galeri Keindahan"}  />
@@ -53,7 +48,6 @@ const Galeri = () => {
       <GalleryBento items={galleryItems} />
       </div>
       </div>
-      <Footer/>
     </>
   );
 };

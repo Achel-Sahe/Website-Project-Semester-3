@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const SubTitle = ({text, className}) => {
+const SubTitle = ({ text, className }) => {
   return (
-      <div>
-          <p className={`qip-subtitle ${className}`}>{text}</p>
-        
+    <div>
+      <p className={`qip-subtitle ${className}`}>{text}</p>
     </div>
-  )
-}
+  );
+};
 
-export default SubTitle
+export default SubTitle;
