@@ -1702,8 +1702,8 @@ object-fit: cover;
 }
 
 .show-more-btn:hover {
+  box-shadow: 0 2px 12px rgba(21, 128, 61, 0.3);
   background: #15803d;
   color: #ffffff;
-  box-shadow: 0 2px 12px rgba(21, 128, 61, 0.3);
 }
 
