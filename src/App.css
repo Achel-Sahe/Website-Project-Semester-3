@@ -199,15 +199,15 @@ button {
 }
 
 .navbar-nav-underline {
-  position: absolute;
-  bottom: 0.25rem;
   left: 1rem;
+  position: absolute;
   right: 1rem;
-  height: 2px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 2px;
+  bottom: 0.25rem;
 }
 
 .navbar-nav-link:hover .navbar-nav-underline,
@@ -223,8 +223,8 @@ button {
 }
 
 .navbar-chevron--open {
-  transform: rotate(180deg);
   color: var(--gold);
+  transform: rotate(180deg);
 }
 
 /* =============================================
@@ -232,12 +232,12 @@ button {
    ============================================= */
 .navbar-dropdown {
   position: absolute;
+  width: 18rem;
   left: 50%;
   top: 100%;
-  width: 18rem;
-  padding-top: 1rem;
-  pointer-events: none;
   opacity: 0;
+  pointer-events: none;
+  padding-top: 1rem;
   transform: translateX(-50%) translateY(-0.5rem);
   transition:
     opacity var(--nav-transition),
@@ -245,9 +245,9 @@ button {
 }
 
 .navbar-dropdown--open {
-  pointer-events: auto;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
 }
 
 .navbar-dropdown-inner {
