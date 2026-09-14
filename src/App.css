@@ -134,21 +134,21 @@ button {
 }
 
 .navbar-brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
   gap: 0.2rem;
+  flex-direction: column;
+  display: flex;
+  font-weight: inherit;
   margin: 0;
   font-size: inherit;
-  font-weight: inherit;
+  line-height: 1;
 }
 
 .navbar-brand-text span {
-  font-family: var(--font-display);
-  font-size: 1.425rem;
-  font-weight: 700;
   letter-spacing: 0.04em;
+  font-size: 1.425rem;
+  font-family: var(--font-display);
   color: var(--color-primary);
+  font-weight: 700;
 }
 
 /* =============================================
