@@ -8,12 +8,11 @@ button {
 }
 
 .galeri-page {
-  margin-top: 7rem;
   padding-top: 5rem;
-
+  margin-top: 7rem;
   .qip-subtitle {
-    margin: 2rem 0;
     text-align: left;
+    margin: 2rem 0;
   } 
   .head {
     margin: 0 .5rem 3rem;
@@ -27,9 +26,9 @@ button {
 }
 
 .header-section {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  justify-content: space-between;
+  display: flex;
   .right-header {
     .right-button {
       text-decoration: none;
@@ -41,8 +40,8 @@ button {
       -ms-transition: 0.3s;
       -o-transition: 0.3s;
       &:hover {
-        color: var(--color-background-scnd);
         background-color: var(--color-primary);
+        color: var(--color-background-scnd);
       }
     }
     .arrow {
